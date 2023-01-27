@@ -1,0 +1,31 @@
+{
+	"name": "DelimitedText33",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "datamovesize",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Filename1": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().Filename1",
+					"type": "Expression"
+				},
+				"container": "testingnew"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

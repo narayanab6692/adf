@@ -1,0 +1,9 @@
+{
+	"name": "DBC",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8f646b6c-e733-464f-8986-e2358146f78f",
+		"tenantId": "9335e8d8-ef6b-4399-8617-e06fa4939413"
+	}
+}
